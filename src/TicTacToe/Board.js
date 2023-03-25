@@ -37,18 +37,17 @@ function Board({showState})
 
   return (
     <>
-    <h1>Siemaneczko</h1>
-      <Button key={1} value={status[0]} onButtonClick={() => handleClick(0)}/>
-      <Button key={2} value={status[1]} onButtonClick={() => handleClick(1)}/>
-      <Button key={3} value={status[2]} onButtonClick={() => handleClick(2)}/>
+      <Button value={status[0]} onButtonClick={() => handleClick(0)}/>
+      <Button value={status[1]} onButtonClick={() => handleClick(1)}/>
+      <Button value={status[2]} onButtonClick={() => handleClick(2)}/>
       <br />
-      <Button key={4} value={status[3]} onButtonClick={() => handleClick(3)}/>
-      <Button key={5} value={status[4]} onButtonClick={() => handleClick(4)}/>
-      <Button key={6} value={status[5]} onButtonClick={() => handleClick(5)}/>
+      <Button value={status[3]} onButtonClick={() => handleClick(3)}/>
+      <Button value={status[4]} onButtonClick={() => handleClick(4)}/>
+      <Button value={status[5]} onButtonClick={() => handleClick(5)}/>
       <br />
-      <Button key={7} value={status[6]} onButtonClick={() => handleClick(6)}/>
-      <Button key={8} value={status[7]} onButtonClick={() => handleClick(7)}/>
-      <Button key={9} value={status[8]} onButtonClick={() => handleClick(8)}/>
+      <Button value={status[6]} onButtonClick={() => handleClick(6)}/>
+      <Button value={status[7]} onButtonClick={() => handleClick(7)}/>
+      <Button value={status[8]} onButtonClick={() => handleClick(8)}/>
       <div className='winner'>{winner}</div>
 
     </>
