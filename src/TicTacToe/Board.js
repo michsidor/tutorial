@@ -37,6 +37,7 @@ function Board({showState})
 
   return (
     <>
+    <h1>Siemaneczko</h1>
       <Button key={1} value={status[0]} onButtonClick={() => handleClick(0)}/>
       <Button key={2} value={status[1]} onButtonClick={() => handleClick(1)}/>
       <Button key={3} value={status[2]} onButtonClick={() => handleClick(2)}/>
