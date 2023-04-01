@@ -1,9 +1,10 @@
 import React from 'react'
 import './MojStyl.css'
 
-function Button({value, onButtonClick}) {
+function Button({state,changeButtonsState}) {
+
   return (
-    <button className="myButton" onClick={onButtonClick}>{value}</button>
+    <button className="myButton" onClick={changeButtonsState}>{state}</button>
   )
 }
 

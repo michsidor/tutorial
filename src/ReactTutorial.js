@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import Game from './TicTacToe/Game';
+import Board from './TicTacToe/Board';
 
 function ReactTutorial() {
   return (
     <div className="App">
-        <Game />
+        <Board />
     </div>
   )
 }

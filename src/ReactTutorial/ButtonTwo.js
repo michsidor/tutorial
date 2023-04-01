@@ -1,7 +1,7 @@
 import React from 'react'
 
-function ButtonTwo( {count, buttonHandler} ) {
-
+function ButtonTwo( {count=5, buttonHandler} ) {
+  
   return (
     <>
       <h1>Aktualny stan: {count}</h1>
