@@ -3,40 +3,39 @@ import { useState } from 'react'
 
 function Form() {
 
-  const [isSelected, setIsSelected] = useState('First')
+  const [isSelected, setIsSelected] = useState(0)
   
   function handleSelect(state){
-    if(state === 'First'){
-      setIsSelected('Second')
-    }
-    else{
-      setIsSelected('First')
-    }
+      setIsSelected(state)
   }
 
   return (
     <>
     <h1>Information about two persons:</h1>
     <p>Michal</p>
-    <About select={isSelected} onClick={() => handleSelect('First')}>
-      Siemanko
+    <About isActive={isSelected === 0 } onClick={() => handleSelect(0)}>
+      Siemanko jestem Michal i przepieknie wam zaprogramuje
     </About>
     <p>Piotrek</p>
-    <About select={isSelected} onClick={() => handleSelect("Second")}>
-    Siemanko2
+    <About isActive={isSelected === 1 } onClick={() => handleSelect(1)}>
+      Siemanko jestem Piotrek i przepieknie was obetne
     </About>
     </>
   )
 }
 
-function About( {select,onClick, children} ) {
-
-  const returnJSX = select === 'First' ? <div><button onClick={onClick('Second')}>Show more information</button></div> : {children}
-  return (
+function About( {isActive,onClick, children} ) {
+  return(
     <>
-    {returnJSX}
+    {isActive ? 
+    (<div>{children}</div>)
+    :
+    (<button onClick={onClick}>Show more information</button>)
+    }
     </>
-  )
+  )  
+   
 }
+
 
 export default Form

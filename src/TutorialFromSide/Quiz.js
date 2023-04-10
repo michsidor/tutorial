@@ -5,7 +5,7 @@ function Quiz() {
   const [answer,setAnswer] = useState(' ');
   const [disable,setDisable] = useState(true);
   const [winner, setWinner] = useState(null);
-  const handleAnswer = async (event) => {
+  const handleAnswer = (event) => {
     setAnswer(event.target.value);
     if(event.target.value.trim() !== ''){
       setDisable(false);
