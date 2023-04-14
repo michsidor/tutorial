@@ -8,12 +8,13 @@ import Main from './TutorialFromSide/ExtractingStateLoginIntoReducer/ReducerOne'
 import ReducerTwo from './TutorialFromSide/ExtractingStateLoginIntoReducer/ReducerWay';
 import NormalWay from './TutorialFromSide/ExtractingStateLoginIntoReducer/NormalWay';
 import ReducerWay from './TutorialFromSide/ExtractingStateLoginIntoReducer/ReducerWay';
+import ComponentOne from './TutorialFromSide/PassingDataDeeplyWithContext/Strona';
+import App from './TutorialFromSide/ScalingUpWithReducerAndContext/App';
 
 function ReactTutorial() {
   return (
     <div className="App">
-        {/* <NormalWay/> */}
-        <ReducerWay />
+      <App/>
     </div>
   )
 }
