@@ -9,12 +9,14 @@ import ReducerTwo from './TutorialFromSide/ExtractingStateLoginIntoReducer/Reduc
 import NormalWay from './TutorialFromSide/ExtractingStateLoginIntoReducer/NormalWay';
 import ReducerWay from './TutorialFromSide/ExtractingStateLoginIntoReducer/ReducerWay';
 import ComponentOne from './TutorialFromSide/PassingDataDeeplyWithContext/Strona';
-import App from './TutorialFromSide/ScalingUpWithReducerAndContext/App';
+import UseRefTest from './EscapeHatcges/ReferencingValuesWithRefs/UseRefTest';
+import ManipulatinRefTest from './EscapeHatcges/ManipulatingTheDomWithRefs/ManipulatinRefTest';
+import EffectTutorial from './EscapeHatcges/SynchronizingWithEffects/EffectTutorial';
 
 function ReactTutorial() {
   return (
     <div className="App">
-      <App/>
+      <EffectTutorial/>
     </div>
   )
 }
